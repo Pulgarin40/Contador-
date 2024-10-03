@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';  // Importar FormsModule para usar ngModel
+import { FormsModule } from '@angular/forms';  
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule],  // Agregar FormsModule aquí
+  imports: [RouterOutlet, FormsModule],  
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']  // Corregir a styleUrls (plural)
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'mi-proyecto-angular';
