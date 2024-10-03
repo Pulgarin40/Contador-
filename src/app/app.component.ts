@@ -24,6 +24,15 @@ export class AppComponent {
     this.counter--;
   }
 
+  // Método para calcular la raíz cuadrada
+  calculateSqrt() {
+    if (this.counter >= 0) {
+      this.counter = Math.sqrt(this.counter);
+    } else {
+      alert('No se puede calcular la raíz cuadrada de un número negativo');
+    }
+  }
+
   // Método para actualizar el contador con el valor ingresado
   updateCounter(value: string) {
     const parsedValue = parseInt(value, 10);
