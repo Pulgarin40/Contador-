@@ -1,3 +1,22 @@
+
+
+<div class="counter-container">
+    <h1>{{ title }}</h1>
+    <div class="display">
+      <span>{{ counter }}</span>
+    </div>
+    
+    <!-- Input para ingresar valor manualmente -->
+    <input [(ngModel)]="inputValue" type="number" placeholder="Ingresa un número">
+    <button class="btn" (click)="updateCounter(inputValue.toString())">Actualizar Contador</button>
+  
+    <div class="buttons">
+      <button class="btn" (click)="decrement()">-</button>
+      <button class="btn" (click)="increment()">+</button>
+    </div>
+  
+    <button class="btn sqrt" (click)="calculateSqrt()">√ Raíz Cuadrada</button>
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +26,6 @@
 </head>
 <body>
     <h1>Contador</h1>
-    <button> (click)="incrementar()">Incrementar</button>
+    <button> (click)="incrementar()">Incrementar</button>       
 </body>
 </html>
