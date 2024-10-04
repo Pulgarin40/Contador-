@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+body, html {
+  height: 100%;  /* Aseguramos que el body y html ocupen toda la pantalla */
+}
+
+body {
   font-family: 'Roboto', sans-serif;
   background-color: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;  /* Altura de la pantalla completa */
 }
 
 .counter-container {
@@ -21,9 +24,6 @@ html, body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
@@ -39,8 +39,6 @@ h1 {
   margin-bottom: 20px;
   font-size: 32px;
   color: #555;
-  width: 100%; /* Para que ocupe todo el ancho */
-  text-align: center; /* Para centrar el texto */
 }
 
 input[type="number"] {
@@ -56,7 +54,6 @@ input[type="number"] {
 .buttons {
   display: flex;
   justify-content: space-around;
-  width: 100%;
   margin-bottom: 20px;
 }
 
